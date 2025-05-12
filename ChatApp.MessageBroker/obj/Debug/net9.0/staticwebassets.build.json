@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "pAoA6Hb+3PSnyI4uE4bD8J5hiJEtFoYOMzeSB/PWn0Y=",
+  "Source": "ChatApp.MessageBroker",
+  "BasePath": "_content/ChatApp.MessageBroker",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

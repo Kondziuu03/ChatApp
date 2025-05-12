@@ -1,0 +1,15 @@
+C:\Users\konra\source\repos\ChatApp\ChatApp.Infrastructure\bin\Debug\net9.0\ChatApp.Infrastructure.deps.json
+C:\Users\konra\source\repos\ChatApp\ChatApp.Infrastructure\bin\Debug\net9.0\ChatApp.Infrastructure.dll
+C:\Users\konra\source\repos\ChatApp\ChatApp.Infrastructure\bin\Debug\net9.0\ChatApp.Infrastructure.pdb
+C:\Users\konra\source\repos\ChatApp\ChatApp.Infrastructure\obj\Debug\net9.0\ChatApp.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\konra\source\repos\ChatApp\ChatApp.Infrastructure\obj\Debug\net9.0\ChatApp.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\konra\source\repos\ChatApp\ChatApp.Infrastructure\obj\Debug\net9.0\ChatApp.Infrastructure.AssemblyInfo.cs
+C:\Users\konra\source\repos\ChatApp\ChatApp.Infrastructure\obj\Debug\net9.0\ChatApp.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\konra\source\repos\ChatApp\ChatApp.Infrastructure\obj\Debug\net9.0\ChatApp.Infrastructure.dll
+C:\Users\konra\source\repos\ChatApp\ChatApp.Infrastructure\obj\Debug\net9.0\refint\ChatApp.Infrastructure.dll
+C:\Users\konra\source\repos\ChatApp\ChatApp.Infrastructure\obj\Debug\net9.0\ChatApp.Infrastructure.pdb
+C:\Users\konra\source\repos\ChatApp\ChatApp.Infrastructure\obj\Debug\net9.0\ref\ChatApp.Infrastructure.dll
+C:\Users\konra\source\repos\ChatApp\ChatApp.Infrastructure\bin\Debug\net9.0\ChatApp.Core.Domain.dll
+C:\Users\konra\source\repos\ChatApp\ChatApp.Infrastructure\bin\Debug\net9.0\ChatApp.Core.Domain.pdb
+C:\Users\konra\source\repos\ChatApp\ChatApp.Infrastructure\obj\Debug\net9.0\ChatApp.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\konra\source\repos\ChatApp\ChatApp.Infrastructure\obj\Debug\net9.0\ChatApp..20B20D2C.Up2Date

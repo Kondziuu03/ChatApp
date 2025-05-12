@@ -1,0 +1,17 @@
+C:\Users\konra\source\repos\ChatApp\ChatApp.Core.Application\bin\Debug\net9.0\ChatApp.Core.Application.deps.json
+C:\Users\konra\source\repos\ChatApp\ChatApp.Core.Application\bin\Debug\net9.0\ChatApp.Core.Application.dll
+C:\Users\konra\source\repos\ChatApp\ChatApp.Core.Application\bin\Debug\net9.0\ChatApp.Core.Application.pdb
+C:\Users\konra\source\repos\ChatApp\ChatApp.Core.Application\obj\Debug\net9.0\ChatApp.Core.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\konra\source\repos\ChatApp\ChatApp.Core.Application\obj\Debug\net9.0\ChatApp.Core.Application.AssemblyInfoInputs.cache
+C:\Users\konra\source\repos\ChatApp\ChatApp.Core.Application\obj\Debug\net9.0\ChatApp.Core.Application.AssemblyInfo.cs
+C:\Users\konra\source\repos\ChatApp\ChatApp.Core.Application\obj\Debug\net9.0\ChatApp.Core.Application.csproj.CoreCompileInputs.cache
+C:\Users\konra\source\repos\ChatApp\ChatApp.Core.Application\obj\Debug\net9.0\ChatApp.Core.Application.dll
+C:\Users\konra\source\repos\ChatApp\ChatApp.Core.Application\obj\Debug\net9.0\refint\ChatApp.Core.Application.dll
+C:\Users\konra\source\repos\ChatApp\ChatApp.Core.Application\obj\Debug\net9.0\ChatApp.Core.Application.pdb
+C:\Users\konra\source\repos\ChatApp\ChatApp.Core.Application\obj\Debug\net9.0\ref\ChatApp.Core.Application.dll
+C:\Users\konra\source\repos\ChatApp\ChatApp.Core.Application\bin\Debug\net9.0\ChatApp.Core.Domain.dll
+C:\Users\konra\source\repos\ChatApp\ChatApp.Core.Application\bin\Debug\net9.0\ChatApp.Infrastructure.dll
+C:\Users\konra\source\repos\ChatApp\ChatApp.Core.Application\bin\Debug\net9.0\ChatApp.Infrastructure.pdb
+C:\Users\konra\source\repos\ChatApp\ChatApp.Core.Application\bin\Debug\net9.0\ChatApp.Core.Domain.pdb
+C:\Users\konra\source\repos\ChatApp\ChatApp.Core.Application\obj\Debug\net9.0\ChatApp.Core.Application.csproj.AssemblyReference.cache
+C:\Users\konra\source\repos\ChatApp\ChatApp.Core.Application\obj\Debug\net9.0\ChatApp..E09B58A4.Up2Date
