@@ -1,0 +1,53 @@
+## Ignore Visual Studio temporary files, build results, and user-specific files
+
+# Build results
+bin/
+obj/
+
+# User-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# VS Code settings
+.vscode/
+
+# Rider settings
+.idea/
+
+# Visual Studio folder
+.vs/
+
+# Auto-generated files
+Generated_Code/
+
+# Backup & log files
+*.log
+*.bak
+*.tmp
+
+# NuGet packages (optional if using PackageReference)
+*.nupkg
+packages/
+
+# ASP.NET files
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# Resharper
+_ReSharper*/
+*.DotSettings.user
+
+# Docker files
+*.pid
+
+# Other
+TestResults/
+*.coverage
+*.dbmdl
+
+# Optional: Exclude secrets/configs
+appsettings.Development.json
+secrets.json
