@@ -4,11 +4,15 @@
 bin/
 obj/
 
+**/bin/
+**/obj/
+
 # User-specific files
 *.user
 *.suo
 *.userosscache
 *.sln.docstates
+*.cache
 
 # VS Code settings
 .vscode/
