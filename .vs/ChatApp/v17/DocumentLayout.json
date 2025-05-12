@@ -3,12 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\konra\\source\\repos\\ChatApp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3527F938-B536-4970-85EB-9A68E0845F6E}|ChatApp\\ChatApp.API.csproj|c:\\users\\konra\\source\\repos\\chatapp\\chatapp\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3527F938-B536-4970-85EB-9A68E0845F6E}|ChatApp\\ChatApp.API.csproj|solutionrelative:chatapp\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3527F938-B536-4970-85EB-9A68E0845F6E}|ChatApp\\ChatApp.API.csproj|c:\\users\\konra\\source\\repos\\chatapp\\chatapp\\controllers\\chatcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3527F938-B536-4970-85EB-9A68E0845F6E}|ChatApp\\ChatApp.API.csproj|solutionrelative:chatapp\\controllers\\chatcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\konra\\source\\repos\\ChatApp\\ChatApp\\Controllers\\AuthController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ChatApp\\Controllers\\AuthController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2E1941E5-798D-4147-92A7-3E2F2D307347}|ChatApp.Core.Application\\ChatApp.Core.Application.csproj|c:\\users\\konra\\source\\repos\\chatapp\\chatapp.core.application\\services\\chatservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -31,20 +27,8 @@
       "RelativeMoniker": "D:0:0:{2E1941E5-798D-4147-92A7-3E2F2D307347}|ChatApp.Core.Application\\ChatApp.Core.Application.csproj|solutionrelative:chatapp.core.application\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3527F938-B536-4970-85EB-9A68E0845F6E}|ChatApp\\ChatApp.API.csproj|c:\\users\\konra\\source\\repos\\chatapp\\chatapp\\hubs\\messagehub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3527F938-B536-4970-85EB-9A68E0845F6E}|ChatApp\\ChatApp.API.csproj|solutionrelative:chatapp\\hubs\\messagehub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{174F1D13-446E-4FD4-BD4B-C3AC4E03F23A}|ChatApp.Infrastructure\\ChatApp.Infrastructure.csproj|c:\\users\\konra\\source\\repos\\chatapp\\chatapp.infrastructure\\repositories\\chatrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{174F1D13-446E-4FD4-BD4B-C3AC4E03F23A}|ChatApp.Infrastructure\\ChatApp.Infrastructure.csproj|solutionrelative:chatapp.infrastructure\\repositories\\chatrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3527F938-B536-4970-85EB-9A68E0845F6E}|ChatApp\\ChatApp.API.csproj|c:\\users\\konra\\source\\repos\\chatapp\\chatapp\\extensions\\claimsprincipalextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3527F938-B536-4970-85EB-9A68E0845F6E}|ChatApp\\ChatApp.API.csproj|solutionrelative:chatapp\\extensions\\claimsprincipalextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3527F938-B536-4970-85EB-9A68E0845F6E}|ChatApp\\ChatApp.API.csproj|c:\\users\\konra\\source\\repos\\chatapp\\chatapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3527F938-B536-4970-85EB-9A68E0845F6E}|ChatApp\\ChatApp.API.csproj|solutionrelative:chatapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{174F1D13-446E-4FD4-BD4B-C3AC4E03F23A}|ChatApp.Infrastructure\\ChatApp.Infrastructure.csproj|c:\\users\\konra\\source\\repos\\chatapp\\chatapp.infrastructure\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -63,18 +47,6 @@
       "RelativeMoniker": "D:0:0:{431A4855-2508-4E3D-B58D-AC3752216757}|ChatApp.Core.Domain\\ChatApp.Core.Domain.csproj|solutionrelative:chatapp.core.domain\\dtos\\chatdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3527F938-B536-4970-85EB-9A68E0845F6E}|ChatApp\\ChatApp.API.csproj|c:\\users\\konra\\source\\repos\\chatapp\\chatapp\\extensions\\servicecollectionextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3527F938-B536-4970-85EB-9A68E0845F6E}|ChatApp\\ChatApp.API.csproj|solutionrelative:chatapp\\extensions\\servicecollectionextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3527F938-B536-4970-85EB-9A68E0845F6E}|ChatApp\\ChatApp.API.csproj|c:\\users\\konra\\source\\repos\\chatapp\\chatapp\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{3527F938-B536-4970-85EB-9A68E0845F6E}|ChatApp\\ChatApp.API.csproj|solutionrelative:chatapp\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3527F938-B536-4970-85EB-9A68E0845F6E}|ChatApp\\ChatApp.API.csproj|c:\\users\\konra\\source\\repos\\chatapp\\chatapp\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{3527F938-B536-4970-85EB-9A68E0845F6E}|ChatApp\\ChatApp.API.csproj|solutionrelative:chatapp\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{CE715F59-2800-4C1E-A102-43E16CE1C325}|ChatMeeting.AppHost\\ChatMeeting.AppHost.csproj|c:\\users\\konra\\source\\repos\\chatapp\\chatmeeting.apphost\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CE715F59-2800-4C1E-A102-43E16CE1C325}|ChatMeeting.AppHost\\ChatMeeting.AppHost.csproj|solutionrelative:chatmeeting.apphost\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -84,14 +56,6 @@
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files\\dotnet\\sdk\\9.0.201\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.NET.Sdk.DefaultItems.Shared.targets||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3527F938-B536-4970-85EB-9A68E0845F6E}|ChatApp\\ChatApp.API.csproj|c:\\users\\konra\\source\\repos\\chatapp\\chatapp\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{3527F938-B536-4970-85EB-9A68E0845F6E}|ChatApp\\ChatApp.API.csproj|solutionrelative:chatapp\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3527F938-B536-4970-85EB-9A68E0845F6E}|ChatApp\\ChatApp.API.csproj|c:\\users\\konra\\source\\repos\\chatapp\\chatapp\\chatapp.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
-      "RelativeMoniker": "D:0:0:{3527F938-B536-4970-85EB-9A68E0845F6E}|ChatApp\\ChatApp.API.csproj|solutionrelative:chatapp\\chatapp.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{174F1D13-446E-4FD4-BD4B-C3AC4E03F23A}|ChatApp.Infrastructure\\ChatApp.Infrastructure.csproj|c:\\users\\konra\\source\\repos\\chatapp\\chatapp.infrastructure\\chatapp.infrastructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
@@ -150,10 +114,6 @@
       "RelativeMoniker": "D:0:0:{431A4855-2508-4E3D-B58D-AC3752216757}|ChatApp.Core.Domain\\ChatApp.Core.Domain.csproj|solutionrelative:chatapp.core.domain\\interfaces\\producer\\ikafkaproducer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3527F938-B536-4970-85EB-9A68E0845F6E}|ChatApp\\ChatApp.API.csproj|c:\\users\\konra\\source\\repos\\chatapp\\chatapp\\kafka.yml||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{3527F938-B536-4970-85EB-9A68E0845F6E}|ChatApp\\ChatApp.API.csproj|solutionrelative:chatapp\\kafka.yml||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{431A4855-2508-4E3D-B58D-AC3752216757}|ChatApp.Core.Domain\\ChatApp.Core.Domain.csproj|c:\\users\\konra\\source\\repos\\chatapp\\chatapp.core.domain\\extensions\\modelbuilderextensionschats.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{431A4855-2508-4E3D-B58D-AC3752216757}|ChatApp.Core.Domain\\ChatApp.Core.Domain.csproj|solutionrelative:chatapp.core.domain\\extensions\\modelbuilderextensionschats.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -208,6 +168,46 @@
     {
       "AbsoluteMoniker": "D:0:0:{431A4855-2508-4E3D-B58D-AC3752216757}|ChatApp.Core.Domain\\ChatApp.Core.Domain.csproj|c:\\users\\konra\\source\\repos\\chatapp\\chatapp.core.domain\\exceptions\\chatnotfoundexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{431A4855-2508-4E3D-B58D-AC3752216757}|ChatApp.Core.Domain\\ChatApp.Core.Domain.csproj|solutionrelative:chatapp.core.domain\\exceptions\\chatnotfoundexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\konra\\source\\repos\\ChatApp\\ChatApp\\Controllers\\ChatController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ChatApp\\Controllers\\ChatController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\konra\\source\\repos\\ChatApp\\ChatApp\\Hubs\\MessageHub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ChatApp\\Hubs\\MessageHub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\konra\\source\\repos\\ChatApp\\ChatApp\\Extensions\\ClaimsPrincipalExtensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ChatApp\\Extensions\\ClaimsPrincipalExtensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\konra\\source\\repos\\ChatApp\\ChatApp\\Extensions\\ServiceCollectionExtensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ChatApp\\Extensions\\ServiceCollectionExtensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\konra\\source\\repos\\ChatApp\\ChatApp\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ChatApp\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\konra\\source\\repos\\ChatApp\\ChatApp\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ChatApp\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\konra\\source\\repos\\ChatApp\\ChatApp\\appsettings.Development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ChatApp\\appsettings.Development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\konra\\source\\repos\\ChatApp\\ChatApp\\Properties\\launchSettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ChatApp\\Properties\\launchSettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\konra\\source\\repos\\ChatApp\\ChatApp\\ChatApp.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ChatApp\\ChatApp.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\konra\\source\\repos\\ChatApp\\ChatApp\\kafka.yml||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ChatApp\\kafka.yml||{8B382828-6202-11D1-8870-0000F87579D2}"
     }
   ],
   "DocumentGroupContainers": [
@@ -221,20 +221,19 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "ChatApp.MessageBroker",
+              "DocumentIndex": 4,
+              "Title": "ChatApp.MessageBroker.csproj",
               "DocumentMoniker": "C:\\Users\\konra\\source\\repos\\ChatApp\\ChatApp.MessageBroker\\ChatApp.MessageBroker.csproj",
               "RelativeDocumentMoniker": "ChatApp.MessageBroker\\ChatApp.MessageBroker.csproj",
               "ToolTip": "C:\\Users\\konra\\source\\repos\\ChatApp\\ChatApp.MessageBroker\\ChatApp.MessageBroker.csproj",
               "RelativeToolTip": "ChatApp.MessageBroker\\ChatApp.MessageBroker.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-05-11T09:13:36.708Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-11T09:13:36.708Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 42,
               "Title": "ChatController.cs",
               "DocumentMoniker": "C:\\Users\\konra\\source\\repos\\ChatApp\\ChatApp\\Controllers\\ChatController.cs",
               "RelativeDocumentMoniker": "ChatApp\\Controllers\\ChatController.cs",
@@ -242,12 +241,11 @@
               "RelativeToolTip": "ChatApp\\Controllers\\ChatController.cs",
               "ViewState": "AgIAAAsAAAAAAAAAAAArwBoAAABfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-03T15:39:27.973Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-03T15:39:27.973Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "ChatService.cs",
               "DocumentMoniker": "C:\\Users\\konra\\source\\repos\\ChatApp\\ChatApp.Core.Application\\Services\\ChatService.cs",
               "RelativeDocumentMoniker": "ChatApp.Core.Application\\Services\\ChatService.cs",
@@ -255,12 +253,11 @@
               "RelativeToolTip": "ChatApp.Core.Application\\Services\\ChatService.cs",
               "ViewState": "AgIAAAwAAAAAAAAAAAAIwBkAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-03T15:26:37.075Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-03T15:26:37.075Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 43,
               "Title": "MessageHub.cs",
               "DocumentMoniker": "C:\\Users\\konra\\source\\repos\\ChatApp\\ChatApp\\Hubs\\MessageHub.cs",
               "RelativeDocumentMoniker": "ChatApp\\Hubs\\MessageHub.cs",
@@ -268,12 +265,11 @@
               "RelativeToolTip": "ChatApp\\Hubs\\MessageHub.cs",
               "ViewState": "AgIAABkAAAAAAAAAAAAQwBIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-03T20:15:53.805Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-03T20:15:53.805Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 5,
               "Title": "AuthService.cs",
               "DocumentMoniker": "C:\\Users\\konra\\source\\repos\\ChatApp\\ChatApp.Core.Application\\Services\\AuthService.cs",
               "RelativeDocumentMoniker": "ChatApp.Core.Application\\Services\\AuthService.cs",
@@ -281,8 +277,7 @@
               "RelativeToolTip": "ChatApp.Core.Application\\Services\\AuthService.cs",
               "ViewState": "AgIAABEAAAAAAAAAAAAqwCUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-01T19:44:12.535Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-01T19:44:12.535Z"
             },
             {
               "$type": "Document",
@@ -292,14 +287,12 @@
               "RelativeDocumentMoniker": "ChatApp\\Controllers\\AuthController.cs",
               "ToolTip": "C:\\Users\\konra\\source\\repos\\ChatApp\\ChatApp\\Controllers\\AuthController.cs",
               "RelativeToolTip": "ChatApp\\Controllers\\AuthController.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAxwBEAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-01T13:06:19.468Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-01T13:06:19.468Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 6,
               "Title": "ChatRepository.cs",
               "DocumentMoniker": "C:\\Users\\konra\\source\\repos\\ChatApp\\ChatApp.Infrastructure\\Repositories\\ChatRepository.cs",
               "RelativeDocumentMoniker": "ChatApp.Infrastructure\\Repositories\\ChatRepository.cs",
@@ -307,12 +300,11 @@
               "RelativeToolTip": "ChatApp.Infrastructure\\Repositories\\ChatRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-03T15:13:49.129Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-03T15:13:49.129Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 44,
               "Title": "ClaimsPrincipalExtensions.cs",
               "DocumentMoniker": "C:\\Users\\konra\\source\\repos\\ChatApp\\ChatApp\\Extensions\\ClaimsPrincipalExtensions.cs",
               "RelativeDocumentMoniker": "ChatApp\\Extensions\\ClaimsPrincipalExtensions.cs",
@@ -320,12 +312,11 @@
               "RelativeToolTip": "ChatApp\\Extensions\\ClaimsPrincipalExtensions.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-04T19:58:52.137Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-04T19:58:52.137Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\konra\\source\\repos\\ChatApp\\ChatApp.MessageBroker\\Program.cs",
               "RelativeDocumentMoniker": "ChatApp.MessageBroker\\Program.cs",
@@ -333,12 +324,11 @@
               "RelativeToolTip": "ChatApp.MessageBroker\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-04T21:10:07.27Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-04T21:10:07.27Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "KafkaConsumer.cs",
               "DocumentMoniker": "C:\\Users\\konra\\source\\repos\\ChatApp\\ChatApp.MessageBroker\\KafkaConsumer.cs",
               "RelativeDocumentMoniker": "ChatApp.MessageBroker\\KafkaConsumer.cs",
@@ -346,12 +336,11 @@
               "RelativeToolTip": "ChatApp.MessageBroker\\KafkaConsumer.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAGsAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-04T21:16:33.485Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-04T21:16:33.485Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 45,
               "Title": "ServiceCollectionExtensions.cs",
               "DocumentMoniker": "C:\\Users\\konra\\source\\repos\\ChatApp\\ChatApp\\Extensions\\ServiceCollectionExtensions.cs",
               "RelativeDocumentMoniker": "ChatApp\\Extensions\\ServiceCollectionExtensions.cs",
@@ -363,7 +352,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 7,
               "Title": "UserRepository.cs",
               "DocumentMoniker": "C:\\Users\\konra\\source\\repos\\ChatApp\\ChatApp.Infrastructure\\Repositories\\UserRepository.cs",
               "RelativeDocumentMoniker": "ChatApp.Infrastructure\\Repositories\\UserRepository.cs",
@@ -375,7 +364,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 46,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\konra\\source\\repos\\ChatApp\\ChatApp\\Program.cs",
               "RelativeDocumentMoniker": "ChatApp\\Program.cs",
@@ -387,7 +376,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 9,
               "Title": "MessageDto.cs",
               "DocumentMoniker": "C:\\Users\\konra\\source\\repos\\ChatApp\\ChatApp.Core.Domain\\Dtos\\MessageDto.cs",
               "RelativeDocumentMoniker": "ChatApp.Core.Domain\\Dtos\\MessageDto.cs",
@@ -399,7 +388,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 10,
               "Title": "ChatDto.cs",
               "DocumentMoniker": "C:\\Users\\konra\\source\\repos\\ChatApp\\ChatApp.Core.Domain\\Dtos\\ChatDto.cs",
               "RelativeDocumentMoniker": "ChatApp.Core.Domain\\Dtos\\ChatDto.cs",
@@ -411,7 +400,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 47,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\konra\\source\\repos\\ChatApp\\ChatApp\\appsettings.json",
               "RelativeDocumentMoniker": "ChatApp\\appsettings.json",
@@ -423,7 +412,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 8,
               "Title": "KafkaProducer.cs",
               "DocumentMoniker": "C:\\Users\\konra\\source\\repos\\ChatApp\\ChatApp.Infrastructure\\Producer\\KafkaProducer.cs",
               "RelativeDocumentMoniker": "ChatApp.Infrastructure\\Producer\\KafkaProducer.cs",
@@ -435,7 +424,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 48,
               "Title": "appsettings.Development.json",
               "DocumentMoniker": "C:\\Users\\konra\\source\\repos\\ChatApp\\ChatApp\\appsettings.Development.json",
               "RelativeDocumentMoniker": "ChatApp\\appsettings.Development.json",
@@ -447,7 +436,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 49,
               "Title": "launchSettings.json",
               "DocumentMoniker": "C:\\Users\\konra\\source\\repos\\ChatApp\\ChatApp\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "ChatApp\\Properties\\launchSettings.json",
@@ -459,7 +448,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 14,
               "Title": "ChatApp.Infrastructure.csproj",
               "DocumentMoniker": "C:\\Users\\konra\\source\\repos\\ChatApp\\ChatApp.Infrastructure\\ChatApp.Infrastructure.csproj",
               "RelativeDocumentMoniker": "ChatApp.Infrastructure\\ChatApp.Infrastructure.csproj",
@@ -467,12 +456,11 @@
               "RelativeToolTip": "ChatApp.Infrastructure\\ChatApp.Infrastructure.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAABUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-05-05T19:52:46.817Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-05T19:52:46.817Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 18,
               "Title": "ClaimType.cs",
               "DocumentMoniker": "C:\\Users\\konra\\source\\repos\\ChatApp\\ChatApp.Core.Domain\\Consts\\ClaimType.cs",
               "RelativeDocumentMoniker": "ChatApp.Core.Domain\\Consts\\ClaimType.cs",
@@ -484,7 +472,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 11,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\konra\\source\\repos\\ChatApp\\ChatMeeting.AppHost\\Program.cs",
               "RelativeDocumentMoniker": "ChatMeeting.AppHost\\Program.cs",
@@ -496,7 +484,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 50,
               "Title": "ChatApp.http",
               "DocumentMoniker": "C:\\Users\\konra\\source\\repos\\ChatApp\\ChatApp\\ChatApp.http",
               "RelativeDocumentMoniker": "ChatApp\\ChatApp.http",
@@ -508,7 +496,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 13,
               "Title": "Microsoft.NET.Sdk.DefaultItems.Shared.targets",
               "DocumentMoniker": "C:\\Program Files\\dotnet\\sdk\\9.0.201\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.NET.Sdk.DefaultItems.Shared.targets",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\Program Files\\dotnet\\sdk\\9.0.201\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.NET.Sdk.DefaultItems.Shared.targets",
@@ -520,7 +508,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 12,
               "Title": "ChatMeeting.AppHost.csproj",
               "DocumentMoniker": "C:\\Users\\konra\\source\\repos\\ChatApp\\ChatMeeting.AppHost\\ChatMeeting.AppHost.csproj",
               "RelativeDocumentMoniker": "ChatMeeting.AppHost\\ChatMeeting.AppHost.csproj",
@@ -528,12 +516,11 @@
               "RelativeToolTip": "ChatMeeting.AppHost\\ChatMeeting.AppHost.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-05-09T19:04:20.758Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-09T19:04:20.758Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 17,
               "Title": "IJwtService.cs",
               "DocumentMoniker": "C:\\Users\\konra\\source\\repos\\ChatApp\\ChatApp.Core.Domain\\Interfaces\\Services\\IJwtService.cs",
               "RelativeDocumentMoniker": "ChatApp.Core.Domain\\Interfaces\\Services\\IJwtService.cs",
@@ -545,7 +532,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 16,
               "Title": "JwtSettingsOption.cs",
               "DocumentMoniker": "C:\\Users\\konra\\source\\repos\\ChatApp\\ChatApp.Core.Domain\\Options\\JwtSettingsOption.cs",
               "RelativeDocumentMoniker": "ChatApp.Core.Domain\\Options\\JwtSettingsOption.cs",
@@ -557,7 +544,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 15,
               "Title": "JwtService.cs",
               "DocumentMoniker": "C:\\Users\\konra\\source\\repos\\ChatApp\\ChatApp.Core.Application\\Services\\JwtService.cs",
               "RelativeDocumentMoniker": "ChatApp.Core.Application\\Services\\JwtService.cs",
@@ -569,7 +556,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 19,
               "Title": "launchSettings.json",
               "DocumentMoniker": "C:\\Users\\konra\\source\\repos\\ChatApp\\ChatApp.MessageBroker\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "ChatApp.MessageBroker\\Properties\\launchSettings.json",
@@ -581,7 +568,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 21,
               "Title": "ChatDbContext.cs",
               "DocumentMoniker": "C:\\Users\\konra\\source\\repos\\ChatApp\\ChatApp.Core.Domain\\ChatDbContext.cs",
               "RelativeDocumentMoniker": "ChatApp.Core.Domain\\ChatDbContext.cs",
@@ -593,7 +580,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 20,
               "Title": "appsettings.Development.json",
               "DocumentMoniker": "C:\\Users\\konra\\source\\repos\\ChatApp\\ChatApp.MessageBroker\\appsettings.Development.json",
               "RelativeDocumentMoniker": "ChatApp.MessageBroker\\appsettings.Development.json",
@@ -605,7 +592,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 22,
               "Title": "KafkaOption.cs",
               "DocumentMoniker": "C:\\Users\\konra\\source\\repos\\ChatApp\\ChatApp.Core.Domain\\Options\\KafkaOption.cs",
               "RelativeDocumentMoniker": "ChatApp.Core.Domain\\Options\\KafkaOption.cs",
@@ -617,7 +604,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 23,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\konra\\source\\repos\\ChatApp\\ChatApp.MessageBroker\\appsettings.json",
               "RelativeDocumentMoniker": "ChatApp.MessageBroker\\appsettings.json",
@@ -629,7 +616,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 25,
               "Title": "GroupKafka.cs",
               "DocumentMoniker": "C:\\Users\\konra\\source\\repos\\ChatApp\\ChatApp.Core.Domain\\Consts\\GroupKafka.cs",
               "RelativeDocumentMoniker": "ChatApp.Core.Domain\\Consts\\GroupKafka.cs",
@@ -641,7 +628,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 26,
               "Title": "TopicKafka.cs",
               "DocumentMoniker": "C:\\Users\\konra\\source\\repos\\ChatApp\\ChatApp.Core.Domain\\Consts\\TopicKafka.cs",
               "RelativeDocumentMoniker": "ChatApp.Core.Domain\\Consts\\TopicKafka.cs",
@@ -653,7 +640,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 27,
               "Title": "IKafkaProducer.cs",
               "DocumentMoniker": "C:\\Users\\konra\\source\\repos\\ChatApp\\ChatApp.Core.Domain\\Interfaces\\Producer\\IKafkaProducer.cs",
               "RelativeDocumentMoniker": "ChatApp.Core.Domain\\Interfaces\\Producer\\IKafkaProducer.cs",
@@ -665,7 +652,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 24,
               "Title": "IChatService.cs",
               "DocumentMoniker": "C:\\Users\\konra\\source\\repos\\ChatApp\\ChatApp.Core.Domain\\Interfaces\\Services\\IChatService.cs",
               "RelativeDocumentMoniker": "ChatApp.Core.Domain\\Interfaces\\Services\\IChatService.cs",
@@ -677,7 +664,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 51,
               "Title": "kafka.yml",
               "DocumentMoniker": "C:\\Users\\konra\\source\\repos\\ChatApp\\ChatApp\\kafka.yml",
               "RelativeDocumentMoniker": "ChatApp\\kafka.yml",
@@ -689,7 +676,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 28,
               "Title": "ModelBuilderExtensionsChats.cs",
               "DocumentMoniker": "C:\\Users\\konra\\source\\repos\\ChatApp\\ChatApp.Core.Domain\\Extensions\\ModelBuilderExtensionsChats.cs",
               "RelativeDocumentMoniker": "ChatApp.Core.Domain\\Extensions\\ModelBuilderExtensionsChats.cs",
@@ -701,7 +688,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 29,
               "Title": "UserConnectionService.cs",
               "DocumentMoniker": "C:\\Users\\konra\\source\\repos\\ChatApp\\ChatApp.Core.Application\\Services\\UserConnectionService.cs",
               "RelativeDocumentMoniker": "ChatApp.Core.Application\\Services\\UserConnectionService.cs",
@@ -713,7 +700,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 30,
               "Title": "IAuthService.cs",
               "DocumentMoniker": "C:\\Users\\konra\\source\\repos\\ChatApp\\ChatApp.Core.Domain\\Interfaces\\Services\\IAuthService.cs",
               "RelativeDocumentMoniker": "ChatApp.Core.Domain\\Interfaces\\Services\\IAuthService.cs",
@@ -725,7 +712,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
+              "DocumentIndex": 31,
               "Title": "20250503211828_InitialCreate.cs",
               "DocumentMoniker": "C:\\Users\\konra\\source\\repos\\ChatApp\\ChatApp.Core.Domain\\Migrations\\20250503211828_InitialCreate.cs",
               "RelativeDocumentMoniker": "ChatApp.Core.Domain\\Migrations\\20250503211828_InitialCreate.cs",
@@ -737,7 +724,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 42,
+              "DocumentIndex": 32,
               "Title": "20250503211621_InitialCreate.cs",
               "DocumentMoniker": "C:\\Users\\konra\\source\\repos\\ChatApp\\ChatApp.Core.Domain\\Migrations\\20250503211621_InitialCreate.cs",
               "RelativeDocumentMoniker": "ChatApp.Core.Domain\\Migrations\\20250503211621_InitialCreate.cs",
@@ -748,7 +735,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 45,
+              "DocumentIndex": 35,
               "Title": "LoginDto.cs",
               "DocumentMoniker": "C:\\Users\\konra\\source\\repos\\ChatApp\\ChatApp.Core.Domain\\Dtos\\LoginDto.cs",
               "RelativeDocumentMoniker": "ChatApp.Core.Domain\\Dtos\\LoginDto.cs",
@@ -760,7 +747,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 44,
+              "DocumentIndex": 34,
               "Title": "Chat.cs",
               "DocumentMoniker": "C:\\Users\\konra\\source\\repos\\ChatApp\\ChatApp.Core.Domain\\Models\\Chat.cs",
               "RelativeDocumentMoniker": "ChatApp.Core.Domain\\Models\\Chat.cs",
@@ -772,7 +759,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 43,
+              "DocumentIndex": 33,
               "Title": "Message.cs",
               "DocumentMoniker": "C:\\Users\\konra\\source\\repos\\ChatApp\\ChatApp.Core.Domain\\Models\\Message.cs",
               "RelativeDocumentMoniker": "ChatApp.Core.Domain\\Models\\Message.cs",
@@ -784,7 +771,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 46,
+              "DocumentIndex": 36,
               "Title": "AuthDto.cs",
               "DocumentMoniker": "C:\\Users\\konra\\source\\repos\\ChatApp\\ChatApp.Core.Domain\\Dtos\\AuthDto.cs",
               "RelativeDocumentMoniker": "ChatApp.Core.Domain\\Dtos\\AuthDto.cs",
@@ -796,7 +783,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 47,
+              "DocumentIndex": 37,
               "Title": "RegisterUserDto.cs",
               "DocumentMoniker": "C:\\Users\\konra\\source\\repos\\ChatApp\\ChatApp.Core.Domain\\Dtos\\RegisterUserDto.cs",
               "RelativeDocumentMoniker": "ChatApp.Core.Domain\\Dtos\\RegisterUserDto.cs",
@@ -808,7 +795,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 48,
+              "DocumentIndex": 38,
               "Title": "User.cs",
               "DocumentMoniker": "C:\\Users\\konra\\source\\repos\\ChatApp\\ChatApp.Core.Domain\\Models\\User.cs",
               "RelativeDocumentMoniker": "ChatApp.Core.Domain\\Models\\User.cs",
@@ -820,7 +807,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 50,
+              "DocumentIndex": 40,
               "Title": "IChatRepository.cs",
               "DocumentMoniker": "C:\\Users\\konra\\source\\repos\\ChatApp\\ChatApp.Core.Domain\\Interfaces\\Repositories\\IChatRepository.cs",
               "RelativeDocumentMoniker": "ChatApp.Core.Domain\\Interfaces\\Repositories\\IChatRepository.cs",
@@ -832,7 +819,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 51,
+              "DocumentIndex": 41,
               "Title": "ChatNotFoundException.cs",
               "DocumentMoniker": "C:\\Users\\konra\\source\\repos\\ChatApp\\ChatApp.Core.Domain\\Exceptions\\ChatNotFoundException.cs",
               "RelativeDocumentMoniker": "ChatApp.Core.Domain\\Exceptions\\ChatNotFoundException.cs",
@@ -844,7 +831,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 49,
+              "DocumentIndex": 39,
               "Title": "IUserRepository.cs",
               "DocumentMoniker": "C:\\Users\\konra\\source\\repos\\ChatApp\\ChatApp.Core.Domain\\Interfaces\\Repositories\\IUserRepository.cs",
               "RelativeDocumentMoniker": "ChatApp.Core.Domain\\Interfaces\\Repositories\\IUserRepository.cs",
