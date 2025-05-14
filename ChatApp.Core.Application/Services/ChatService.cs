@@ -5,20 +5,17 @@ using ChatApp.Core.Domain.Interfaces.Repositories;
 using ChatApp.Core.Domain.Interfaces.Services;
 using ChatApp.Core.Domain.Models;
 using Confluent.Kafka;
-using Microsoft.Extensions.Logging;
 using System.Text.Json;
 
 namespace ChatApp.Core.Application.Services
 {
     public class ChatService : IChatService
     {
-        private readonly ILogger<ChatService> _logger;
         private readonly IChatRepository _chatRepository;
         private readonly IKafkaProducer _kafkaProducer;
 
-        public ChatService(ILogger<ChatService> logger, IChatRepository chatRepository, IKafkaProducer kafkaProducer)
+        public ChatService(IChatRepository chatRepository, IKafkaProducer kafkaProducer)
         {
-            _logger = logger;
             _chatRepository = chatRepository;
             _kafkaProducer = kafkaProducer;
         }
@@ -40,7 +37,7 @@ namespace ChatApp.Core.Application.Services
         } 
 
         private ChatDto ConvertToChatDto(Chat chat) =>
-            new ChatDto
+            new()
             {
                 Id = chat.Id,
                 Name = chat.Name,

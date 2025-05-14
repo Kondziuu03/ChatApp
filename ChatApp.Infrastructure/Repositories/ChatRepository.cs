@@ -3,40 +3,29 @@ using ChatApp.Core.Domain.Exceptions;
 using ChatApp.Core.Domain.Interfaces.Repositories;
 using ChatApp.Core.Domain.Models;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Logging;
 
 namespace ChatApp.Infrastructure.Repositories
 {
     public class ChatRepository : IChatRepository
     {
-        private readonly ILogger<ChatRepository> _logger;
         private readonly ChatDbContext _context;
 
-        public ChatRepository(ILogger<ChatRepository> logger, ChatDbContext context)
+        public ChatRepository(ChatDbContext context)
         {
-            _logger = logger;
             _context = context;
         }
 
         public async Task<Chat> GetChatWithMessages(string chatName, int pageNumber, int pageSize)
         {
-            try
-            {
-                var chat = await GetChat(chatName, pageNumber, pageSize);
+            var chat = await GetChat(chatName, pageNumber, pageSize);
 
-                if (chat == null)
-                    throw new ChatNotFoundException(chatName);
+            if (chat == null)
+                throw new NotFoundException($"Could not find chat with name: {chatName}");
 
-                return chat;
-            }
-            catch (Exception ex)
-            {
-                _logger.LogError(ex, $"Error occurred while getting chat with name: {chatName}");
-                throw;
-            }
+            return chat;
         }
 
-        private async Task<Chat?> GetChat(string chatName, int pageNumber, int pageSize) => 
+        private async Task<Chat?> GetChat(string chatName, int pageNumber, int pageSize) =>
             await _context.Chats
                 .Where(x => x.Name == chatName)
                 .Include(x => x.Messages

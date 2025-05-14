@@ -46,7 +46,7 @@ namespace ChatApp.MessageBroker
             consumer.Subscribe(topic);
             _logger.LogInformation($"Subscribed to topic: {topic}");
 
-            while(!stoppingToken.IsCancellationRequested)
+            while (!stoppingToken.IsCancellationRequested)
             {
                 try
                 {
@@ -59,7 +59,8 @@ namespace ChatApp.MessageBroker
                     _logger.LogError(ex, $"Error occurred while processing the message");
                     await Task.Delay(1000, stoppingToken);
                 }
-            };
+            }
+            ;
         }
 
         private async Task ProcessMessage(string value)
@@ -76,20 +77,12 @@ namespace ChatApp.MessageBroker
 
         private async Task SaveMessage(Message message)
         {
-            try
-            {
-                var dbContext = await _dbContextFactory.CreateDbContextAsync();
+            var dbContext = await _dbContextFactory.CreateDbContextAsync();
 
-                await dbContext.Messages.AddAsync(message);
-                await dbContext.SaveChangesAsync();
+            await dbContext.Messages.AddAsync(message);
+            await dbContext.SaveChangesAsync();
 
-                _logger.LogInformation($"Message with id: {message.Id} saved successfully");
-            }
-            catch (Exception ex)
-            {
-                _logger.LogError(ex, "Error occurred while saving message to the database");
-                throw;
-            }
+            _logger.LogInformation($"Message with id: {message.Id} saved successfully");
         }
 
         private Message CreateMessage(MessageDto messageDto) =>

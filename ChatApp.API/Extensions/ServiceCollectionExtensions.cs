@@ -1,4 +1,5 @@
-﻿using ChatApp.Core.Application.Services;
+﻿using ChatApp.API.Middleware;
+using ChatApp.Core.Application.Services;
 using ChatApp.Core.Domain;
 using ChatApp.Core.Domain.Interfaces.Producer;
 using ChatApp.Core.Domain.Interfaces.Repositories;
@@ -36,6 +37,8 @@ namespace ChatApp.API.Extensions
             services.AddTransient<IKafkaProducer, KafkaProducer>();
 
             services.AddSingleton(new UserConnectionService());
+
+            services.AddScoped<ErrorHandlingMiddleware>();
 
             services.AddSignalR();
 

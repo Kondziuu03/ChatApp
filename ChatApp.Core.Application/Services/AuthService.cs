@@ -23,56 +23,37 @@ namespace ChatApp.Core.Application.Services
 
         public async Task<AuthDto> GetToken(LoginDto loginDto)
         {
-            try
-            {
-                var user = await _userRepository.GetByUsername(loginDto.Username);
+            var user = await _userRepository.GetByUsername(loginDto.Username);
 
-                if (user == null)
-                {
-                    _logger.LogWarning($"User with username: {loginDto.Username} not found");
-                    throw new InvalidOperationException($"User with username: {loginDto.Username} does not exist");
-                }
+            if (user == null)
+                throw new InvalidOperationException($"User with username: {loginDto.Username} does not exist");
 
-                if (!VerifyPassword(loginDto.Password, user.Password))
-                    throw new UnauthorizedAccessException($"Invalid password for user: {loginDto.Username}");
+            if (!VerifyPassword(loginDto.Password, user.Password))
+                throw new UnauthorizedAccessException($"Invalid password for user: {loginDto.Username}");
 
-                return _jwtService.GenerateJwtToken(user);
-            }
-            catch (Exception ex)
-            {
-                _logger.LogError(ex, $"Error occurred while generating token for user: {loginDto.Username}");
-                throw;
-            }
+            return _jwtService.GenerateJwtToken(user);
         }
 
         public async Task RegisterUser(RegisterUserDto registerUserDto)
         {
-			try
-			{
-                var existingUser = await _userRepository.GetByUsername(registerUserDto.Username);
+            var existingUser = await _userRepository.GetByUsername(registerUserDto.Username);
 
-                if (existingUser != null)
-                {
-                    _logger.LogWarning($"User with username: {registerUserDto.Username} already exists");
-                    throw new InvalidOperationException($"User with username: {registerUserDto.Username} already exists");
-                }
-
-                var user = new User(registerUserDto.Username, HashPassword(registerUserDto.Password));
-
-                await _userRepository.Create(user);
+            if (existingUser != null)
+            {
+                _logger.LogWarning($"User with username: {registerUserDto.Username} already exists");
+                throw new InvalidOperationException($"User with username: {registerUserDto.Username} already exists");
             }
-			catch (Exception ex)
-			{
-                _logger.LogError(ex, $"Error occurred while registering user with username: {registerUserDto.Username}");
-                throw new InvalidProgramException();
-			}
+
+            var user = new User(registerUserDto.Username, HashPassword(registerUserDto.Password));
+
+            await _userRepository.Create(user);
         }
 
         private bool VerifyPassword(string enteredPassword, string storedPassword)
         {
             var parts = storedPassword.Split(':');
 
-            if(parts.Length != 2)
+            if (parts.Length != 2)
                 throw new FormatException("Invalid password format");
 
             var salt = Convert.FromBase64String(parts[0]);
@@ -87,7 +68,7 @@ namespace ChatApp.Core.Application.Services
         {
             var salt = new byte[128 / 8];
 
-            using(var rng  = RandomNumberGenerator.Create())
+            using (var rng = RandomNumberGenerator.Create())
                 rng.GetBytes(salt);
 
             var hashed = Hash(password, salt);
@@ -95,7 +76,7 @@ namespace ChatApp.Core.Application.Services
             return $"{Convert.ToBase64String(salt)}:{hashed}";
         }
 
-        private string Hash(string password, byte[] salt)
-            => Convert.ToBase64String(KeyDerivation.Pbkdf2(password, salt, KeyDerivationPrf.HMACSHA256, 10000, 256/8));
+        private string Hash(string password, byte[] salt) => 
+            Convert.ToBase64String(KeyDerivation.Pbkdf2(password, salt, KeyDerivationPrf.HMACSHA256, 10000, 256 / 8));
     }
 }
