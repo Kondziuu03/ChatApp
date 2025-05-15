@@ -29,7 +29,8 @@ namespace ChatApp.Infrastructure.Repositories
 
         public async Task<User?> GetByUsername(string username)
         {
-            var user = await _context.Users.FirstOrDefaultAsync(user => user.Username == username);
+            var user = await _context.Users
+                .FirstOrDefaultAsync(user => EF.Functions.Collate(user.Username, "Latin1_General_CS_AS") == username);
 
             if (user == null)
                 _logger.LogWarning($"User with username: {username} not found");

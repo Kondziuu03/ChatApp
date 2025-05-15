@@ -21,6 +21,7 @@ builder.Host.UseSerilog();
 builder.Services.AddConfiguration(configuration);
 builder.Services.AddServices();
 builder.Services.AddOptions(configuration);
+builder.Services.AddValidators();
 
 var orgin = configuration.GetValue<string>("Origin") ?? throw new NullReferenceException("Empty orgin");
 

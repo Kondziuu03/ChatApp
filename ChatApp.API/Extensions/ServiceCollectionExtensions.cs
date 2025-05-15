@@ -1,12 +1,16 @@
 ﻿using ChatApp.API.Middleware;
 using ChatApp.Core.Application.Services;
 using ChatApp.Core.Domain;
+using ChatApp.Core.Domain.Dtos;
+using ChatApp.Core.Domain.Dtos.Validators;
 using ChatApp.Core.Domain.Interfaces.Producer;
 using ChatApp.Core.Domain.Interfaces.Repositories;
 using ChatApp.Core.Domain.Interfaces.Services;
 using ChatApp.Core.Domain.Options;
 using ChatApp.Infrastructure.Producer;
 using ChatApp.Infrastructure.Repositories;
+using FluentValidation;
+using FluentValidation.AspNetCore;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
@@ -72,6 +76,14 @@ namespace ChatApp.API.Extensions
                 options.TokenValidationParameters = GetTokenValidationParams(key);
                 options.Events = GetEvents();
             });
+        }
+
+        public static IServiceCollection AddValidators(this IServiceCollection services)
+        {
+            services.AddFluentValidationAutoValidation();
+            services.AddScoped<IValidator<RegisterUserDto>, RegisterUserDtoValidator>();
+
+            return services;
         }
 
         private static JwtBearerEvents GetEvents()

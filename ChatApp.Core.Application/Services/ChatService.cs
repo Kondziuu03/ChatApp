@@ -42,7 +42,6 @@ namespace ChatApp.Core.Application.Services
                 Id = chat.Id,
                 Name = chat.Name,
                 Messages = chat.Messages?
-                .OrderByDescending(m => m.CreatedAt)
                 .Select(m => new MessageDto
                 {
                     Id = m.Id,
