@@ -22,8 +22,9 @@ builder.Services.AddConfiguration(configuration);
 builder.Services.AddServices();
 builder.Services.AddOptions(configuration);
 builder.Services.AddValidators();
+builder.Services.AddKernelWithOllamaConfiguration(configuration);
 
-var orgin = configuration.GetValue<string>("Origin") ?? throw new NullReferenceException("Empty orgin");
+var orgin = configuration["Origin"] ?? throw new NullReferenceException("Empty orgin");
 
 builder.Services.AddCors(options =>
     options.AddPolicy("Origin",

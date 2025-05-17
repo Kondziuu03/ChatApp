@@ -29,7 +29,7 @@ namespace ChatApp.Infrastructure.Repositories
             await _context.Chats
                 .Where(x => x.Name == chatName)
                 .Include(x => x.Messages
-                    .OrderBy(x => x.CreatedAt)
+                    .OrderByDescending(x => x.CreatedAt)
                     .Skip((pageNumber - 1) * pageSize)
                     .Take(pageSize))
                 .ThenInclude(x => x.User)

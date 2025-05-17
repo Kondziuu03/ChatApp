@@ -1,5 +1,6 @@
 ﻿using ChatApp.API.Middleware;
 using ChatApp.Core.Application.Services;
+using ChatApp.Core.Application.SKPlugins;
 using ChatApp.Core.Domain;
 using ChatApp.Core.Domain.Dtos;
 using ChatApp.Core.Domain.Dtos.Validators;
@@ -14,6 +15,7 @@ using FluentValidation.AspNetCore;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
+using Microsoft.SemanticKernel;
 using System.Text;
 
 namespace ChatApp.API.Extensions
@@ -57,6 +59,47 @@ namespace ChatApp.API.Extensions
             return services;
         }
 
+        public static IServiceCollection AddValidators(this IServiceCollection services)
+        {
+            services.AddFluentValidationAutoValidation();
+            services.AddScoped<IValidator<RegisterUserDto>, RegisterUserDtoValidator>();
+
+            return services;
+        }
+
+        public static IServiceCollection AddKernelWithOllamaConfiguration(this IServiceCollection services, IConfiguration configuration)
+        {
+            services.AddTransient(sp =>
+            {
+                var kernelBuilder = Kernel.CreateBuilder();
+
+                var configuration = sp.GetRequiredService<IConfiguration>();
+                var ollamaModelId = configuration["Ollama:ModelId"] ?? throw new NullReferenceException("Empty ollama model");
+                var ollamaEndpoint = configuration["Ollama:Endpoint"] ?? throw new NullReferenceException("Empty ollama endpoint");
+
+                try
+                {
+                    kernelBuilder.AddOpenAIChatCompletion(modelId: ollamaModelId, apiKey: "ollama", endpoint: new Uri(ollamaEndpoint));
+                }
+                catch (Exception ex)
+                {
+                    var logger = sp.GetRequiredService<ILogger<Program>>();
+                    logger.LogError(ex, "Failed to configure Ollama. Make sure Ollama is running at {Endpoint} with model {ModelId}", ollamaEndpoint, ollamaModelId);
+
+                    throw;
+                }
+
+                var kernel = kernelBuilder.Build();
+
+                var messagePlugin = new MessagePlugin(kernel);
+                kernel.Plugins.AddFromObject(messagePlugin);
+
+                return kernel;
+            });
+
+            return services;
+        }
+
         private static void AddCustomAuthentication(IServiceCollection services, IConfiguration configuration)
         {
             var jwtSettings = configuration.GetSection(nameof(JwtSettingsOption)).Get<JwtSettingsOption>();
@@ -76,14 +119,6 @@ namespace ChatApp.API.Extensions
                 options.TokenValidationParameters = GetTokenValidationParams(key);
                 options.Events = GetEvents();
             });
-        }
-
-        public static IServiceCollection AddValidators(this IServiceCollection services)
-        {
-            services.AddFluentValidationAutoValidation();
-            services.AddScoped<IValidator<RegisterUserDto>, RegisterUserDtoValidator>();
-
-            return services;
         }
 
         private static JwtBearerEvents GetEvents()
