@@ -105,3 +105,7 @@ ollama pull llama3.1:8b
 ```
 
 ## Run frontend (optional) - https://github.com/Kondziuu03/ChatApp-frontend
+
+```bash
+npm start
+```
