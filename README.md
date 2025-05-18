@@ -24,8 +24,9 @@ For testings purposes was prepared a simple frontend in React with help of AI to
 - SemanticKernel, Ollama connector
 
 # Setup
-## Fill appsettings with needed configuration, apply migrations to db
+Unfortunately, there is currently no easy way to run the application, as it's still in development. To make it work few extra steps need to be done.
 
+## Fill appsettings with needed configuration, apply migrations to db
 ```json
 {
   "Logging": {
@@ -80,6 +81,12 @@ For testings purposes was prepared a simple frontend in React with help of AI to
 ```bash
 docker compose -f kafka.yml up
 ```
+
+## Run Seq container
+```bash
+docker run --name seq -d -e ACCEPT_EULA=Y -p 5341:80 datalust/seq
+```
+
 ## Run Ollama container
 
 Pull Ollama image
