@@ -22,3 +22,86 @@ For testings purposes was prepared a simple frontend in React with help of AI to
 - Kafka
 - Entity Framework, MS SQL server
 - SemanticKernel, Ollama connector
+
+# Setup
+## Fill appsettings with needed configuration, apply migrations to db
+
+```json
+{
+  "Logging": {
+    "LogLevel": {
+      "Default": "Information",
+      "Microsoft.AspNetCore": "Warning"
+    }
+  },
+  "Serilog": {
+    "Using": [ "Serilog.Sinks.Seq" ],
+    "MinimumLevel": {
+      "Default": "Information",
+      "Override": {
+        "Microsoft": "Warning",
+        "System": "Warning"
+      }
+    },
+    "WriteTo": [
+      {
+        "Name": "Seq",
+        "Args": {
+          "serverUrl": "http://localhost:5341"
+        }
+      },
+      {
+        "Name": "Console"
+      }
+    ],
+    "Enrich": [ "FromLogContext", "WithMachineName", "WithThreadId" ],
+    "Properties": {
+      "Application": "ChatApp"
+    }
+  },
+  "JwtSettingsOption": {
+    "SecretKey": "",
+    "ExpiryInMinutes": 60
+  },
+  "Origin": "http://localhost:3000/",
+  "KafkaOption": {
+    "Url": "localhost:9092"
+  },
+  "ConnectionString": "",
+  "Ollama": {
+    "ModelId": "llama3.1:8b",
+    "Endpoint": "http://localhost:11434/v1"
+  }
+}
+
+```
+
+## Run Kafka and Zookeeper containers
+```bash
+docker compose -f kafka.yml up
+```
+## Run Ollama container
+
+Pull Ollama image
+
+```bash
+docker pull ollama/ollama
+```
+
+Run the Ollama container
+
+```bash
+docker run -d --name my-ollama -p 11434:11434 ollama/ollama
+```
+Access the ollama container
+
+```bash
+docker compose exec ollama bash
+```
+Pull needed LLM models
+
+```bash
+ollama pull llama3.1:8b
+```
+
+## Run frontend (optional) - https://github.com/Kondziuu03/ChatApp-frontend
