@@ -11,9 +11,8 @@ namespace ChatApp.Core.Domain.Extensions
             {
                 Id = new Guid("427FCAA3-2655-401D-AD6B-9418B2410763"),
                 Name = "Global",
-                CreatedAt = new DateTime(2025, 05, 03, 20, 0, 0)
+                CreatedAt = DateTime.SpecifyKind(new DateTime(2025, 5, 25, 12, 0, 0), DateTimeKind.Utc)
             });
-
         }
     }
 }

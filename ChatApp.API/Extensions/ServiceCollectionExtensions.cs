@@ -28,7 +28,7 @@ namespace ChatApp.API.Extensions
 
             var connectionString = configuration.GetValue<string>("ConnectionString");
             services.AddDbContext<ChatDbContext>(options =>
-                options.UseSqlServer(connectionString));
+                options.UseNpgsql(connectionString));
 
             return services;
         }

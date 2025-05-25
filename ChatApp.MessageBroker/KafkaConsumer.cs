@@ -90,7 +90,7 @@ namespace ChatApp.MessageBroker
             {
                 Id = messageDto.Id,
                 UserId = messageDto.UserId,
-                CreatedAt = messageDto.CreatedAt,
+                CreatedAt = messageDto.CreatedAt.ToUniversalTime(),
                 ChatId = messageDto.ChatId,
                 Text = messageDto.Text
             };

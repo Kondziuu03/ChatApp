@@ -13,7 +13,7 @@ namespace ChatApp.Core.Domain.Dtos.Validators
             RuleFor(x => x.Username)
                .Custom((value, context) =>
                {
-                   if (dbContext.Users.Any(user => EF.Functions.Collate(user.Username, "Latin1_General_CS_AS") == value))
+                   if (dbContext.Users.Any(user => user.Username == value))
                        context.AddFailure("Username", "That username is taken");
                });
 

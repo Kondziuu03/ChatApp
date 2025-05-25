@@ -18,7 +18,7 @@ builder.Services.Configure<KafkaOption>(options => configuration.GetSection(name
 var connectionString = configuration.GetValue<string>("ConnectionString");
 
 builder.Services.AddDbContextFactory<ChatDbContext>(options =>
-    options.UseSqlServer(connectionString));
+    options.UseNpgsql(connectionString));
 
 builder.Services.AddHostedService<KafkaConsumer>();
 
