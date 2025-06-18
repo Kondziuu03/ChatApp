@@ -1,4 +1,4 @@
-﻿using ChatApp.Core.Domain.Models;
+﻿using ChatApp.Core.Domain.Entities;
 
 namespace ChatApp.Core.Domain.Interfaces.Repositories
 {

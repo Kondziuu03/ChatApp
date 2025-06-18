@@ -2,7 +2,7 @@
 using ChatApp.Core.Domain;
 using ChatApp.Core.Domain.Consts;
 using ChatApp.Core.Domain.Dtos;
-using ChatApp.Core.Domain.Models;
+using ChatApp.Core.Domain.Entities;
 using ChatApp.Core.Domain.Options;
 using Confluent.Kafka;
 using Microsoft.EntityFrameworkCore;

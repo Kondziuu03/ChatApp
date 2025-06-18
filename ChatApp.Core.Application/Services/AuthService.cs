@@ -1,7 +1,7 @@
 ﻿using ChatApp.Core.Domain.Dtos;
 using ChatApp.Core.Domain.Interfaces.Repositories;
 using ChatApp.Core.Domain.Interfaces.Services;
-using ChatApp.Core.Domain.Models;
+using ChatApp.Core.Domain.Entities;
 using Microsoft.AspNetCore.Cryptography.KeyDerivation;
 using Microsoft.Extensions.Logging;
 using System.Security.Cryptography;

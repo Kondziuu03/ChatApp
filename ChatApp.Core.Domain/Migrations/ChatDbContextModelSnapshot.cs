@@ -22,7 +22,7 @@ namespace ChatApp.Core.Domain.Migrations
 
             NpgsqlModelBuilderExtensions.UseIdentityByDefaultColumns(modelBuilder);
 
-            modelBuilder.Entity("ChatApp.Core.Domain.Models.Chat", b =>
+            modelBuilder.Entity("ChatApp.Core.Domain.Entities.Chat", b =>
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
@@ -48,7 +48,7 @@ namespace ChatApp.Core.Domain.Migrations
                         });
                 });
 
-            modelBuilder.Entity("ChatApp.Core.Domain.Models.Message", b =>
+            modelBuilder.Entity("ChatApp.Core.Domain.Entities.Message", b =>
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
@@ -76,7 +76,7 @@ namespace ChatApp.Core.Domain.Migrations
                     b.ToTable("Messages");
                 });
 
-            modelBuilder.Entity("ChatApp.Core.Domain.Models.User", b =>
+            modelBuilder.Entity("ChatApp.Core.Domain.Entities.User", b =>
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
@@ -98,15 +98,15 @@ namespace ChatApp.Core.Domain.Migrations
                     b.ToTable("Users");
                 });
 
-            modelBuilder.Entity("ChatApp.Core.Domain.Models.Message", b =>
+            modelBuilder.Entity("ChatApp.Core.Domain.Entities.Message", b =>
                 {
-                    b.HasOne("ChatApp.Core.Domain.Models.Chat", "Chat")
+                    b.HasOne("ChatApp.Core.Domain.Entities.Chat", "Chat")
                         .WithMany("Messages")
                         .HasForeignKey("ChatId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("ChatApp.Core.Domain.Models.User", "User")
+                    b.HasOne("ChatApp.Core.Domain.Entities.User", "User")
                         .WithMany("Messages")
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -117,12 +117,12 @@ namespace ChatApp.Core.Domain.Migrations
                     b.Navigation("User");
                 });
 
-            modelBuilder.Entity("ChatApp.Core.Domain.Models.Chat", b =>
+            modelBuilder.Entity("ChatApp.Core.Domain.Entities.Chat", b =>
                 {
                     b.Navigation("Messages");
                 });
 
-            modelBuilder.Entity("ChatApp.Core.Domain.Models.User", b =>
+            modelBuilder.Entity("ChatApp.Core.Domain.Entities.User", b =>
                 {
                     b.Navigation("Messages");
                 });

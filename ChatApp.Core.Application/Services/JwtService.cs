@@ -1,6 +1,6 @@
 ﻿using ChatApp.Core.Domain.Dtos;
 using ChatApp.Core.Domain.Interfaces.Services;
-using ChatApp.Core.Domain.Models;
+using ChatApp.Core.Domain.Entities;
 using ChatApp.Core.Domain.Options;
 using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;

@@ -16,6 +16,7 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.SemanticKernel;
+using Microsoft.SemanticKernel.Memory;
 using System.Text;
 
 namespace ChatApp.API.Extensions
@@ -41,6 +42,9 @@ namespace ChatApp.API.Extensions
             services.AddTransient<IJwtService, JwtService>();
             services.AddTransient<IChatService, ChatService>();
             services.AddTransient<IKafkaProducer, KafkaProducer>();
+            services.AddTransient<IPdfProcessingService, PdfProcessingService>();
+            services.AddTransient<IEmbeddingService, EmbeddingService>();
+            services.AddTransient<IRagService, RagService>();
 
             services.AddSingleton(new UserConnectionService());
 
@@ -73,18 +77,22 @@ namespace ChatApp.API.Extensions
             {
                 var kernelBuilder = Kernel.CreateBuilder();
 
-                var configuration = sp.GetRequiredService<IConfiguration>();
-                var ollamaModelId = configuration["Ollama:ModelId"] ?? throw new NullReferenceException("Empty ollama model");
+                var ollamaChatModelId = configuration["Ollama:ChatModelId"] ?? throw new NullReferenceException("Empty ollama chat model");
+                var ollamaEmbeddingModelId = configuration["Ollama:EmbeddingModelId"] ?? throw new NullReferenceException("Empty ollama emdedding model");
                 var ollamaEndpoint = configuration["Ollama:Endpoint"] ?? throw new NullReferenceException("Empty ollama endpoint");
+
+                var connectionString = configuration.GetValue<string>("ConnectionString") ?? throw new NullReferenceException("Empty connection string");
 
                 try
                 {
-                    kernelBuilder.AddOpenAIChatCompletion(modelId: ollamaModelId, apiKey: "ollama", endpoint: new Uri(ollamaEndpoint));
+                    kernelBuilder.AddOpenAIChatCompletion(modelId: ollamaChatModelId, apiKey: "ollama", endpoint: new Uri(ollamaEndpoint));
+                    kernelBuilder.AddOllamaEmbeddingGenerator(modelId: ollamaEmbeddingModelId, endpoint: new Uri(ollamaEndpoint));
+                    kernelBuilder.Services.AddPostgresVectorStore(connectionString);
                 }
                 catch (Exception ex)
                 {
                     var logger = sp.GetRequiredService<ILogger<Program>>();
-                    logger.LogError(ex, "Failed to configure Ollama. Make sure Ollama is running at {Endpoint} with model {ModelId}", ollamaEndpoint, ollamaModelId);
+                    logger.LogError(ex, $"Failed to configure Ollama. Make sure Ollama is running at {ollamaEndpoint} with model {ollamaChatModelId}");
 
                     throw;
                 }

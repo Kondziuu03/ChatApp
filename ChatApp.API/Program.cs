@@ -1,6 +1,7 @@
 using ChatApp.API.Extensions;
 using ChatApp.API.Hubs;
 using ChatApp.API.Middleware;
+using Microsoft.SemanticKernel.Memory;
 using Serilog;
 
 var builder = WebApplication.CreateBuilder(args);

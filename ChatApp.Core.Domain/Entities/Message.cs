@@ -1,4 +1,4 @@
-﻿namespace ChatApp.Core.Domain.Models
+﻿namespace ChatApp.Core.Domain.Entities
 {
     public class Message
     {

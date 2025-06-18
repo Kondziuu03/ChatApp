@@ -1,7 +1,7 @@
 ﻿using ChatApp.Core.Domain;
 using ChatApp.Core.Domain.Exceptions;
 using ChatApp.Core.Domain.Interfaces.Repositories;
-using ChatApp.Core.Domain.Models;
+using ChatApp.Core.Domain.Entities;
 using Microsoft.EntityFrameworkCore;
 
 namespace ChatApp.Infrastructure.Repositories

@@ -1,4 +1,4 @@
-﻿using ChatApp.Core.Domain.Models;
+﻿using ChatApp.Core.Domain.Entities;
 using Microsoft.EntityFrameworkCore;
 
 namespace ChatApp.Core.Domain.Extensions
