@@ -25,6 +25,8 @@ namespace ChatApp.Core.Application.Services
 
         public async Task<QueryResponse> QueryAsync(QueryRequest request)
         {
+            var collection = _vectorStore.GetCollection<Guid, DocumentChunkRecord>(CollectionName);
+
             throw new NotImplementedException();
         }
 
