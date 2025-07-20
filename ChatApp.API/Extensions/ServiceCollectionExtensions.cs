@@ -1,4 +1,5 @@
 ﻿using ChatApp.API.Middleware;
+using ChatApp.Core.Application.Mappers;
 using ChatApp.Core.Application.Services;
 using ChatApp.Core.Application.SKPlugins;
 using ChatApp.Core.Domain;
@@ -7,6 +8,7 @@ using ChatApp.Core.Domain.Dtos.Validators;
 using ChatApp.Core.Domain.Interfaces.Producer;
 using ChatApp.Core.Domain.Interfaces.Repositories;
 using ChatApp.Core.Domain.Interfaces.Services;
+using ChatApp.Core.Domain.Models;
 using ChatApp.Core.Domain.Options;
 using ChatApp.Infrastructure.Producer;
 using ChatApp.Infrastructure.Repositories;
@@ -14,9 +16,13 @@ using FluentValidation;
 using FluentValidation.AspNetCore;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.AI;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.VectorData;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.SemanticKernel;
-using Microsoft.SemanticKernel.Memory;
+using Microsoft.SemanticKernel.Data;
+using System.Collections;
 using System.Text;
 
 namespace ChatApp.API.Extensions
@@ -75,6 +81,8 @@ namespace ChatApp.API.Extensions
         {
             services.AddTransient(sp =>
             {
+                var logger = sp.GetRequiredService<ILogger<Program>>();
+
                 var kernelBuilder = Kernel.CreateBuilder();
 
                 var ollamaChatModelId = configuration["Ollama:ChatModelId"] ?? throw new NullReferenceException("Empty ollama chat model");
@@ -91,13 +99,33 @@ namespace ChatApp.API.Extensions
                 }
                 catch (Exception ex)
                 {
-                    var logger = sp.GetRequiredService<ILogger<Program>>();
                     logger.LogError(ex, $"Failed to configure Ollama. Make sure Ollama is running at {ollamaEndpoint} with model {ollamaChatModelId}");
 
                     throw;
                 }
 
                 var kernel = kernelBuilder.Build();
+
+                try
+                {
+                    var vectorStore = kernel.GetRequiredService<VectorStore>();
+                    var collection = vectorStore.GetCollection<Guid, DocumentChunkRecord>("documents");
+
+                    var stringMapper = new DocumentChunkRecordTextSearchStringMapper();
+                    var resultMapper = new DocumentChunkRecordTextSearchResultMapper();
+
+                    var embeddingGenerator = kernel.GetRequiredService<IEmbeddingGenerator<string, Embedding<float>>>();
+
+                    var textSearch = new VectorStoreTextSearch<DocumentChunkRecord>(collection, embeddingGenerator, stringMapper, resultMapper);
+
+                    var searchPlugin = textSearch.CreateWithGetTextSearchResults("SearchPlugin");
+                    kernel.Plugins.Add(searchPlugin);
+                }
+                catch (Exception ex)
+                {
+                    logger.LogError(ex, "Failed to configure search plugin");
+                    throw;
+                }
 
                 var messagePlugin = new MessagePlugin(kernel);
                 kernel.Plugins.AddFromObject(messagePlugin);

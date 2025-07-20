@@ -4,7 +4,7 @@ namespace ChatApp.Core.Domain.Interfaces.Services
 {
     public interface IAuthService
     {
-        Task<AuthDto> GetToken(LoginDto loginDto);
-        Task RegisterUser(RegisterUserDto registerUserDto);
+        Task<AuthDto> GetTokenAsync(LoginDto loginDto);
+        Task RegisterUserAsync(RegisterUserDto registerUserDto);
     }
 }

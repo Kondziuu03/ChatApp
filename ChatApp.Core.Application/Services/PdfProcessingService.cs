@@ -42,16 +42,9 @@ namespace ChatApp.Core.Application.Services
             {
                 chunks.Add(new DocumentChunk
                 {
-                    Content = textChunks[i],
+                    Text = textChunks[i],
                     FileName = file.FileName,
-                    ChunkIndex = i,
-                    Metadata = new Dictionary<string, object>
-                    {
-                        ["filename"] = file.FileName,
-                        ["chunk_index"] = i,
-                        ["total_chunks"] = textChunks.Count,
-                        ["extraction_method"] = "PdfPig"
-                    }
+                    ChunkIndex = i
                 });
             }
 

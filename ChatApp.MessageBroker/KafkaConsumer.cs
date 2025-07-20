@@ -1,5 +1,4 @@
-﻿
-using ChatApp.Core.Domain;
+﻿using ChatApp.Core.Domain;
 using ChatApp.Core.Domain.Consts;
 using ChatApp.Core.Domain.Dtos;
 using ChatApp.Core.Domain.Entities;
@@ -59,8 +58,7 @@ namespace ChatApp.MessageBroker
                     _logger.LogError(ex, $"Error occurred while processing the message");
                     await Task.Delay(1000, stoppingToken);
                 }
-            }
-            ;
+            };
         }
 
         private async Task ProcessMessage(string value)

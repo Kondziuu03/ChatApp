@@ -14,9 +14,10 @@ namespace ChatApp.Core.Domain.Models
         public required int ChunkIndex { get; init; }
 
         [VectorStoreData]
-        public required string Content { get; init; }
+        public required string Text { get; init; }
 
+        //adjusted to nomic-embed-text model
         [VectorStoreVector(768)]
-        public ReadOnlyMemory<float> ContentEmbedding { get; set; }
+        public ReadOnlyMemory<float> Embedding { get; set; }
     }
 }

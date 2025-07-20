@@ -1,10 +1,10 @@
 ﻿using ChatApp.Core.Application.SKPlugins;
 using ChatApp.Core.Domain.Consts;
 using ChatApp.Core.Domain.Dtos;
+using ChatApp.Core.Domain.Entities;
 using ChatApp.Core.Domain.Interfaces.Producer;
 using ChatApp.Core.Domain.Interfaces.Repositories;
 using ChatApp.Core.Domain.Interfaces.Services;
-using ChatApp.Core.Domain.Entities;
 using Confluent.Kafka;
 using Microsoft.SemanticKernel;
 using System.Text.Json;
@@ -24,14 +24,14 @@ namespace ChatApp.Core.Application.Services
             _kernel = kernel;
         }
 
-        public async Task<ChatDto> GetPaginatedChat(string chatName, int pageNumber, int pageSize)
+        public async Task<ChatDto> GetPaginatedChatAsync(string chatName, int pageNumber, int pageSize)
         {
             var chat = await _chatRepository.GetChatWithMessages(chatName, pageNumber, pageSize);
 
             return ConvertToChatDto(chat);
         }
 
-        public async Task<string> ParaphraseMessage(string message, string style = "standard")
+        public async Task<string> ParaphraseMessageAsync(string message, string style = "standard")
         {
             var arguments = new KernelArguments
             {
@@ -50,7 +50,7 @@ namespace ChatApp.Core.Application.Services
             return result.GetValue<string>() ?? string.Empty;
         }
 
-        public async Task<string> CheckGrammar(string message)
+        public async Task<string> CheckGrammarAsync(string message)
         {
             var arguments = new KernelArguments
             {
@@ -67,7 +67,7 @@ namespace ChatApp.Core.Application.Services
             return result.GetValue<string>() ?? string.Empty;
         }
 
-        public async Task SaveMessage(MessageDto messageDto)
+        public async Task SaveMessageAsync(MessageDto messageDto)
         {
             await _kafkaProducer.Produce(TopicKafka.Message, new Message<string, string>
             {

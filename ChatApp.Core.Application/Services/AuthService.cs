@@ -21,7 +21,7 @@ namespace ChatApp.Core.Application.Services
             _jwtService = jwtService;
         }
 
-        public async Task<AuthDto> GetToken(LoginDto loginDto)
+        public async Task<AuthDto> GetTokenAsync(LoginDto loginDto)
         {
             var user = await _userRepository.GetByUsername(loginDto.Username);
 
@@ -34,7 +34,7 @@ namespace ChatApp.Core.Application.Services
             return _jwtService.GenerateJwtToken(user);
         }
 
-        public async Task RegisterUser(RegisterUserDto registerUserDto)
+        public async Task RegisterUserAsync(RegisterUserDto registerUserDto)
         {
             var existingUser = await _userRepository.GetByUsername(registerUserDto.Username);
 

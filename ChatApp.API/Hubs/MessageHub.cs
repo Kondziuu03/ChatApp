@@ -45,7 +45,7 @@ namespace ChatApp.API.Hubs
         {
             await Clients.Group(MainChat).SendAsync("ReceiveMessage", GetUsername(), message);
 
-            await _chatService.SaveMessage(CreateMessageDto(chatId, message));
+            await _chatService.SaveMessageAsync(CreateMessageDto(chatId, message));
         }
 
         private async Task LeaveChat(string chatName) =>

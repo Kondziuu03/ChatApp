@@ -18,7 +18,7 @@ namespace ChatApp.API.Controllers
         [HttpPost("login")]
         public async Task<IActionResult> Login([FromBody] LoginDto loginDto)
         {
-            var token = await _authService.GetToken(loginDto);
+            var token = await _authService.GetTokenAsync(loginDto);
 
             return Ok(token);
         }
@@ -26,7 +26,7 @@ namespace ChatApp.API.Controllers
         [HttpPost("register")]
         public async Task<IActionResult> Register([FromBody] RegisterUserDto registerUserDto)
         {
-            await _authService.RegisterUser(registerUserDto);
+            await _authService.RegisterUserAsync(registerUserDto);
 
             return Ok();
         }

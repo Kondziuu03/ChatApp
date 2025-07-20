@@ -3,6 +3,7 @@ using ChatApp.Core.Domain.Models;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.VectorData;
 using Microsoft.SemanticKernel;
+using Microsoft.SemanticKernel.PromptTemplates.Handlebars;
 
 namespace ChatApp.Core.Application.Services
 {
@@ -23,11 +24,39 @@ namespace ChatApp.Core.Application.Services
             _vectorStore = _kernel.GetRequiredService<VectorStore>();
         }
 
-        public async Task<QueryResponse> QueryAsync(QueryRequest request)
+        public async Task<string> QueryAsync(string message)
         {
-            var collection = _vectorStore.GetCollection<Guid, DocumentChunkRecord>(CollectionName);
+            string promptTemplate = """
+                {{#with (SearchPlugin-GetTextSearchResults query)}}
+                    The following information was retrieved based on the query "{{query}}":
+                    {{#each this}}
+                    Name: {{Name}}
+                    Value: {{Value}}
+                    Link: {{Link}}
+                    -----------------
+                    {{/each}}
+                {{/with}}
 
-            throw new NotImplementedException();
+                Now, using the information above and your own knowledge:
+
+                - If the information provided is sufficient, write a helpful and accurate answer to the question: "{{query}}"
+                - If the answer cannot be determined from the search data or your own knowledge, reply: "I'm sorry, but I couldn't find enough information to answer that question."
+
+                Return a concise, clear response.
+                """;
+
+            KernelArguments arguments = new() { { "query", message } };
+
+            HandlebarsPromptTemplateFactory promptTemplateFactory = new();
+
+            var result = await _kernel.InvokePromptAsync(
+                promptTemplate,
+                arguments,
+                templateFormat: HandlebarsPromptTemplateFactory.HandlebarsTemplateFormat,
+                promptTemplateFactory: promptTemplateFactory
+            );
+
+            return result.GetValue<string>() ?? string.Empty;
         }
 
         public async Task StoreDocumentChunksAsync(List<DocumentChunk> chunks)
@@ -37,22 +66,31 @@ namespace ChatApp.Core.Application.Services
                 var collection = _vectorStore.GetCollection<Guid, DocumentChunkRecord>(CollectionName);
                 await collection.EnsureCollectionExistsAsync();
 
+                var records = new List<DocumentChunkRecord>();
+                int failedCount = 0;
+
                 foreach (var chunk in chunks)
                 {
-                    Console.WriteLine($"Generating embedding for chunk: {chunk.FileName}.{chunk.ChunkIndex}");
-
-                    var result = new DocumentChunkRecord
+                    try
                     {
-                        Key = Guid.NewGuid(),
-                        FileName = chunk.FileName,
-                        ChunkIndex = chunk.ChunkIndex,
-                        Content = chunk.Content,
-                        ContentEmbedding = await _embeddingService.GenerateEmbeddingAsync(chunk.Content)
-                    };
-
-                    Console.WriteLine($"Upserting chunk: {chunk.FileName}.{chunk.ChunkIndex}");
-                    await collection.UpsertAsync(result);
+                        records.Add(new DocumentChunkRecord
+                        {
+                            Key = Guid.NewGuid(),
+                            FileName = chunk.FileName,
+                            ChunkIndex = chunk.ChunkIndex,
+                            Text = chunk.Text,
+                            Embedding = await _embeddingService.GenerateEmbeddingAsync(chunk.Text)
+                        });
+                    }
+                    catch (Exception ex)
+                    {
+                        failedCount++;
+                        _logger.LogWarning(ex, "Failed to generate embedding for chunk: {ChunkIndex} from file: {FileName}", chunk.ChunkIndex, chunk.FileName);
+                    }
                 }
+
+                _logger.LogInformation($"Generated embeddings for {records.Count} chunks, {failedCount} failed");
+                await collection.UpsertAsync(records);
             }
             catch (Exception ex)
             {
